@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title> Controls </title>
+  <style>
+    body {
+      margin: 0;
+      overflow: hidden;
+      background: black;
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+    #controls {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      background: rgba(0, 0, 0, 0.7);
+      padding: 10px;
+      border-radius: 8px;
+      z-index: 1;
+      max-width: 250px;
+    }
+    .slider {
+      width: 150px;
+    }
+    button {
+      margin: 5px 0;
+      padding: 5px 10px;
+      border: none;
+      border-radius: 4px;
+      background: #444;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #666;
+    }
+  </style>
+</head>
+<body>
+  <div id="controls">
+    <h3> Controls </h3>
+    <div id="speedControls"></div>
+    <button id="pauseResume">Pause</button>
+    <button id="autoRotateBtn">Auto Rotate</button>
+    <button id="toggleTheme">Toggle Dark/Light</button>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/three@0.125.2/build/three.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.125.2/examples/js/controls/OrbitControls.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.125.2/examples/js/loaders/FontLoader.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/three@0.125.2/examples/js/geometries/TextGeometry.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
